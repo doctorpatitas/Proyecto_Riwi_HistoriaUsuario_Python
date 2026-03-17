@@ -71,7 +71,7 @@ En su **Escritorio** presione **Click Derecho** y presione donde diga **"Nueva C
 
 Dentro de su carpeta presione **Click Derecho** y presiona la opción que diga **Abrir en una terminal**.
 
-Dentro de la terminar copie y pegue el siguiente comando: **git clone https://github.com/doctorpatitas/Proyecto-_Inventario_Riwi_Python_Diego_Gonzalez.git**
+Dentro de la terminar copie y pegue el siguiente comando: **git clone https://github.com/doctorpatitas/Proyecto_Riwi_HistoriaUsuario_Python.git**
 
 Finalmente introduzca el comando **"code ."** para que le habra **Visual Studio Code** dentro de la carpeta en donde se encuentra ubicado.
 

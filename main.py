@@ -1,3 +1,7 @@
+# Importaciones
+import agregar
+
+
 MENU = """
 ¿Qué desea hacer?
 
@@ -6,6 +10,7 @@ MENU = """
 3. --> Calcula Estadísticas.
 4. --> Salir."""
 
+inventario = []
 
 while True:
     print(MENU)
@@ -17,6 +22,7 @@ while True:
         continue
 
     if opcion == 1:
+
         print("Ha escogido la opción 1")
     elif opcion == 2:
         print("Ha escogido la opción 2")
@@ -28,3 +34,21 @@ while True:
         print("Opción invalida. Intentelo de nuevo.")
 
 print("Gracias por usar este software.")
+
+
+
+
+
+"""coders = []
+
+while True:
+
+    print(MENU)
+    opcion = input("Escoja una opción: ")
+
+    match opcion:
+
+        case "1":
+
+            coder = codersriwi.coder_riwi()
+            coders.append(coder)"""

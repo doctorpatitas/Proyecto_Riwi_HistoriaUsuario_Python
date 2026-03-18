@@ -38,20 +38,20 @@ def agregar_producto():
     
     producto = {}
 
-    producto["nombre"] = nombre
-    producto["precio"] = precio
-    producto["cantidad"] = cantidad
-    print(f"""
-    Producto: {nombre}
-    Precio: {precio}
-    Cantidad: {cantidad}""")
-    """Total: {cantidad_total}"""
-
-agregar_producto()
+    producto[nombre] = {
+        "precio": precio,
+        "cantidad": cantidad
+        }
+    return producto
 
 
+"""print(f
+Producto: {nombre}
+Precio: {precio}
+Cantidad: {cantidad})
+Total: {cantidad_total}
 
 
 
 
-"""Este programa"""
+Este programa"""

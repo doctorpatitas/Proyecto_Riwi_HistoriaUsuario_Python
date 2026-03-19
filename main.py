@@ -1,5 +1,6 @@
 # Importaciones
 import agregar
+import mostrar
 
 
 MENU = """
@@ -10,6 +11,7 @@ MENU = """
 3. --> Calcula Estadísticas.
 4. --> Salir."""
 
+# Lista de inventario
 inventario = []
 
 while True:
@@ -22,9 +24,11 @@ while True:
         continue
 
     if opcion == 1:
-
+        resultado = agregar.agregar_producto()
+        inventario.append(resultado)
         print("Ha escogido la opción 1")
     elif opcion == 2:
+        mostrar.mostrar_producto(inventario)
         print("Ha escogido la opción 2")
     elif opcion == 3:
         print("Ha escogido la opción 3")

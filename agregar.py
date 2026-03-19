@@ -29,7 +29,7 @@ def agregar_producto():
             try:
                 # Solicita la cantidad del producto a ingresar
                 cantidad = int(input("Ingrese la cantidad del producto: "))
-                if precio < 0:
+                if cantidad < 0:
                     print("No se permiten números negativos. Intentelo de nuevo")
                 break
             except ValueError:
@@ -42,8 +42,8 @@ def agregar_producto():
         "precio": precio,
         "cantidad": cantidad
         }
-    return producto
 
+    return producto
 
 """print(f
 Producto: {nombre}

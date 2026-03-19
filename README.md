@@ -73,12 +73,12 @@ Dentro de su carpeta presione **Click Derecho** y presiona la opción que diga *
 
 Dentro de la terminar copie y pegue el siguiente comando: **git clone https://github.com/doctorpatitas/Proyecto_Riwi_HistoriaUsuario_Python.git**
 
-Finalmente introduzca el comando **"code ."** para que le habra **Visual Studio Code** dentro de la carpeta en donde se encuentra ubicado.
+Finalmente introduzca el comando **code .** para que le habra **Visual Studio Code** dentro de la carpeta en donde se encuentra ubicado.
 
 ### 5️⃣ Ejecutar el programa.
 Dentro de **Visual Studio Code** dirigase arriba a la izquierda y presione la opción que diga **Terminal** y luego **New Terminal**
 
-Dentro de la terminal escriba el siguiente comando: **python3 inventario.py**
+Dentro de la terminal escriba el siguiente comando: **python3 main.py**
 
 Y su programa estara ejecutandose exitosamente. 
 

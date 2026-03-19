@@ -1,7 +1,7 @@
 # Importaciones
-import agregar
-import mostrar
-import calculo_estadisticas
+import agregar # Importo el archivo "agregar.py" a "main.py" 
+import mostrar # Importo el archivo "mostrar.py" a "main.py" 
+import calculo_estadisticas # Importo el archivo "calculo_estadisticas.py" a "main.py" 
 
 
 # Menu que se muestra al iniciar el programa.
@@ -19,15 +19,17 @@ inventario = []
 
 
 def menu_estadistica():
+    # Menu que se muestra al escoger la tercera opción en el primer menu
     MENU_ESTADISTICAS = """
     ¿Qué desea hacer?
 
     1. --> Precio De Todos Los Productos.
-    2. --> Cantidad de items.
+    2. --> Cantidad Total de Items.
     3. --> Salir."""
     
 
     while True:
+        # Muestra el segundo menu.
         print(MENU_ESTADISTICAS)
         
 
@@ -37,22 +39,29 @@ def menu_estadistica():
             print("Valor invalido. Intentelo de nuevo.")
 
 
-        if opcion_estadisticas == 1:
+        if opcion_estadisticas == 1: # Precio Total de Inventario.
+            # Guarda el return de la función que contiene el calculo de valor total del inventario y al mismo tiempo la llama.
             calculo_total = calculo_estadisticas.calcular_total(inventario)
+            # Muestra en la terminal el mensaje que yo le puse y la variable que guarda el return de la función.
             print(f"El precio total de su inventario es de: {calculo_total}")
 
-        elif opcion_estadisticas == 2:
+        elif opcion_estadisticas == 2: # Cantidad Total de Items.
+            # Guarda el return de la función que contiene el calculo de la cantidad total de items y al mismo tiempo la llama.
             calculo_cantidad = calculo_estadisticas.calcular_cantidad(inventario)
+            # Muestra en la terminal el mensaje que yo le puse y la variable que guarda el return de la función.
             print(f"La cantidad de productos en su inventario es de: {calculo_cantidad}")
 
-        elif opcion_estadisticas == 3:
+        elif opcion_estadisticas == 3: # Salir.
+            # Rompe el ciclo del while True y sale del menú.
             break
 
-        else:
+        else: # En caso de error.
             print("Opción invalida. Intentelo de nuevo.")
 
 
+
 while True:
+    # Muestra el primer menu.
     print(MENU)
 
     try:
@@ -62,20 +71,25 @@ while True:
         continue
 
     if opcion == 1: # Agregar Productos.
+        # Guarda el return de la función que contiene el diccionario y al mismo tiempo la llama.
         resultado = agregar.agregar_producto()
+        # Guarda la variable que contiene el diccionario dentro de la lista llamada "inventario".
         inventario.append(resultado)
 
 
 
     elif opcion == 2: # Mostrar Inventario.
+        # Llama a la función que contiene el algoritmo que muestra el inventario.
         mostrar.mostrar_producto(inventario)
 
 
     elif opcion == 3: # Calcular Estadisticas.
+        # Llama a la función que contiene el segundo menu.
         menu_estadistica()
 
         
     elif opcion == 4: # Salir
+        # Rompe el ciclo del while True y sale del menú.
         break
 
     

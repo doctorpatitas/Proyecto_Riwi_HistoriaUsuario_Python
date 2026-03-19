@@ -45,13 +45,3 @@ def agregar_producto():
 
     return producto
 
-"""print(f
-Producto: {nombre}
-Precio: {precio}
-Cantidad: {cantidad})
-Total: {cantidad_total}
-
-
-
-
-Este programa"""

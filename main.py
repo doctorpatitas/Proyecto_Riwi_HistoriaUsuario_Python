@@ -47,15 +47,18 @@ def menu_estadistica():
             # Muestra en la terminal el mensaje que yo le puse y la variable que guarda el return de la función.
             print(f"El precio total de su inventario es de: {calculo_total}")
 
+
         elif opcion_estadisticas == 2: # Cantidad Total de Items.
             # Guarda el return de la función que contiene el calculo de la cantidad total de items y al mismo tiempo la llama.
             calculo_cantidad = calculo_estadisticas.calcular_cantidad(inventario)
             # Muestra en la terminal el mensaje que yo le puse y la variable que guarda el return de la función.
             print(f"La cantidad de productos en su inventario es de: {calculo_cantidad}")
+            
 
         elif opcion_estadisticas == 3: # Salir.
             # Rompe el ciclo del while True y sale del menú.
             break
+
 
         else: # En caso de error.
             print("Opción invalida. Intentelo de nuevo.")

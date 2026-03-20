@@ -11,6 +11,7 @@ def agregar_producto():
                 print("No se permiten números ni caracteres especiales. \n")
                 continue
         except ValueError as e:
+            # Muestra el mensaje de error en la terminal.
             print(f"Error: {e}Inténtelo de nuevo.")
         
         
@@ -26,6 +27,7 @@ def agregar_producto():
                     # Rompe el ciclo del while True y sale de la petición.
                     break
             except ValueError:
+                # Muestra el mensaje de error en la terminal.
                 print("Error: Solo se permiten números. Intentelo nuevamente")
 
 
@@ -41,15 +43,21 @@ def agregar_producto():
                     # Rompe el ciclo del while True y sale de la petición.
                     break
             except ValueError:
+                # Muestra el mensaje de error en la terminal.
                 print("Error: Solo se permiten números enteros. Intentelo nuevamente")
         break
     
+
+    # Diccionario que almacena los datos ingresados por el usuario.
     producto = {}
 
+
+    # 
     producto[nombre] = {
         "precio": precio,
         "cantidad": cantidad
         }
 
+    # Retorna el diccionario llamado "producto".
     return producto
 

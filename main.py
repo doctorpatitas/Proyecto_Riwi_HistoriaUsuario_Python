@@ -35,10 +35,11 @@ def menu_estadistica():
 
         # Capturador de errores.
         try:
-            # Variable que almacena la elección del usuario y luego sera usada para el segundo menú.
+            # Captura la elección del usuario para el menú de estadísticas.
             opcion_estadisticas = int(input("Digite una opción. "))
         except ValueError:
             print("Valor invalido. Intentelo de nuevo.")
+            continue
 
 
         if opcion_estadisticas == 1: # Precio Total de Inventario.
@@ -71,7 +72,7 @@ while True: # Ciclo que se repite infinitamente.
 
     # Capturador de errores.
     try:
-        # Variable que guarda la elección del usuario y luego sera usada para el primer menú.
+        # Captura la elección del usuario para el menú principal
         opcion = int(input("Digite una opción. "))
     except ValueError:
         print("Valor invalido. Intentelo de nuevo")

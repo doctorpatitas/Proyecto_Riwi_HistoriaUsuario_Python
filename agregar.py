@@ -52,7 +52,7 @@ def agregar_producto():
     producto = {}
 
 
-    # 
+    # Se guarda el producto en formato de diccionario. 
     producto[nombre] = {
         "precio": precio,
         "cantidad": cantidad

@@ -13,7 +13,7 @@ MENU = """
 3. --> Calcular Estadísticas.
 4. --> Salir."""
 
-
+    
 # Lista en donde se almacena el inventario.
 inventario = []
 

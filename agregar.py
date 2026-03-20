@@ -1,5 +1,5 @@
+# Función que solicita los datos al usuario para ingresar sus productos al programa.
 def agregar_producto():
-    # Solicitar datos al usuario.
     while True: # Ciclo que se repite infinitamente.
         # Capturador de errores
         try:
@@ -19,6 +19,7 @@ def agregar_producto():
             try:
                 # Solicita el precio del producto a ingresar.
                 precio = float(input("Ingrese el precio del producto: "))
+                # En caso de que sea un número negativo.
                 if precio < 0:
                     print("No se permiten números negativos. Intentelo de nuevo")
                 else:
@@ -33,6 +34,7 @@ def agregar_producto():
             try:
                 # Solicita la cantidad del producto a ingresar
                 cantidad = int(input("Ingrese la cantidad del producto: "))
+                # En caso de que sea un número negativo.
                 if cantidad < 0:
                     print("No se permiten números negativos. Intentelo de nuevo")
                 else:

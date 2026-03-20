@@ -19,7 +19,7 @@ inventario = []
 
 
 def menu_estadistica():
-    # Menu que se muestra al escoger la tercera opción en el primer menu
+    # Menú que se muestra al escoger la tercera opción en el primer menu
     MENU_ESTADISTICAS = """
     ¿Qué desea hacer?
 
@@ -27,13 +27,15 @@ def menu_estadistica():
     2. --> Cantidad Total de Items.
     3. --> Salir."""
     
-
-    while True:
+    
+    while True: # Ciclo que se repite infinitamente.
         # Muestra el segundo menu.
         print(MENU_ESTADISTICAS)
         
 
+        # Capturador de errores.
         try:
+            # Variable que almacena la elección del usuario y luego sera usada para el segundo menú.
             opcion_estadisticas = int(input("Digite una opción. "))
         except ValueError:
             print("Valor invalido. Intentelo de nuevo.")
@@ -60,11 +62,13 @@ def menu_estadistica():
 
 
 
-while True:
-    # Muestra el primer menu.
+while True: # Ciclo que se repite infinitamente.
+    # Muestra el primer menú.
     print(MENU)
 
+    # Capturador de errores.
     try:
+        # Variable que guarda la elección del usuario y luego sera usada para el primer menú.
         opcion = int(input("Digite una opción. "))
     except ValueError:
         print("Valor invalido. Intentelo de nuevo")
@@ -94,6 +98,7 @@ while True:
 
     
     else: # En caso de error.
+        # Muestra el mensaje de error en la consola.
         print("Opción invalida. Intentelo de nuevo.")
 
 

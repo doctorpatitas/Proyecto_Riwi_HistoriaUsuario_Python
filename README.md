@@ -1,4 +1,4 @@
-# 🧾 Inventario Programa en Python
+# 🧾 Sistema de Inventario en Python
 ## Historia de usuario Mes 1
 
 ## 📋 Diagrama de flujo.

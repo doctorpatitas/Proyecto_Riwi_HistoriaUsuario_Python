@@ -5,4 +5,4 @@ def mostrar_producto(inventario):
         # Accede al nombre y datos del producto.
         for nombre, datos in i.items():
             # Muestra el inventario en la terminal.
-            print(f"{nombre} |Precio: {datos['precio']} | Cantidad: {datos['cantidad']}")
+            print(f"{nombre} |Precio: {datos['precio']} |Cantidad: {datos['cantidad']}")

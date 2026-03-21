@@ -7,7 +7,7 @@
 
 ## 📌 Descripción
 
-Este es un programa de **Inventario** sencillo de python **Python** que permite al usuario ingresar productos, ver el inventario o calcular el costo total de su inventario.
+Este es un programa de **Inventario** sencillo de **Python** que permite al usuario ingresar productos, ver el inventario o calcular el costo total de su inventario.
 
 ## ⚙️ ¿Cómo funciona el programa?
 
@@ -92,7 +92,7 @@ En la siguiente opción se cuentra la url de descarga de Python 👉
 En la siguiente opción se cuentra la url de descarga de Visual Studio Code 👉 [Visual Studio Code Link de Descarga](https://code.visualstudio.com/download)
 
 ### 3️⃣ Descargar e Instalar Git.
-En la siguiente opción se cuentra la url de descarga de Python 👉
+En la siguiente opción se cuentra la url de descarga de Git 👉
 [Git Link de Descarga](https://git-scm.com/install/)
 
 ### 4️⃣ Clonar el repositorio
@@ -102,7 +102,7 @@ Dentro de su carpeta presione **Click Derecho** y presiona la opción que diga *
 
 Dentro de la terminar copie y pegue el siguiente comando: **git clone https://github.com/doctorpatitas/Proyecto_Riwi_HistoriaUsuario_Python.git**
 
-Finalmente introduzca el comando **code .** para que le habra **Visual Studio Code** dentro de la carpeta en donde se encuentra ubicado.
+Finalmente introduzca el comando **code .** para que le abra **Visual Studio Code** dentro de la carpeta en donde se encuentra ubicado.
 
 ### 5️⃣ Ejecutar el programa.
 Dentro de **Visual Studio Code** dirigase arriba a la izquierda y presione la opción que diga **Terminal** y luego **New Terminal**

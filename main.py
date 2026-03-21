@@ -23,8 +23,8 @@ def menu_estadistica():
     MENU_ESTADISTICAS = """
     ¿Qué desea hacer?
 
-    1. --> Precio De Todos Los Productos.
-    2. --> Cantidad Total de Items.
+    1. --> Ver Costo De Inventario.
+    2. --> Ver Cantidad Total de Items.
     3. --> Salir."""
     
     

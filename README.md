@@ -1,4 +1,4 @@
-# 🧾 Inventario Programa en Python
+# 🧾 Sistema de Inventario en Python
 ## Historia de usuario Mes 1
 
 ## 📋 Diagrama de flujo.
@@ -7,28 +7,57 @@
 
 ## 📌 Descripción
 
-Este es un programa sencillo de **Python** que permite registrar un producto y calcular el precio total a pagar.
+Este es un programa de **Inventario** sencillo de **Python** que permite al usuario ingresar productos, ver el inventario o calcular el costo total de su inventario.
 
 ## ⚙️ ¿Cómo funciona el programa?
 
-El programa pregunta al usuario por:
-- El nombre del producto:
-- El precio del producto:
-- La cantidad del producto:
+El programa muestra un menú inicial y le pregunta al usuario si desea:
+- Agregar Producto.
+- Mostrar Inventario.
+- Calcular Estadísticas.
+- Salir.
 
-Luego realiza el cálculo del total multiplicando:
+Dependiendo de la opción el programa muestra:
 
-**precio x cantidad** 
+### **1. Agregar producto** 
 
-Y finalmente muestra en pantalla:
+Pregunta al usuario por:
 
 - El nombre del producto.
 - El precio del producto.
 - La cantidad del producto.
-- El total a pagar.
+
+Y finalmente guarda la información dentro de un diccionario.
+
+### **2. Mostrar producto.**
+
+Muestra la información que de el producto que el usuario guardo con anterioridad.
+
+### **3. Calcular Estadísticas.**
+
+Al entrar en esta opción le muestra un submenú al usuario y le pregunta si desea: 
+
+- Ver Costo De Inventario.
+- Ver Cantidad Total de Items.
+- Salir.
+
+Si el usuario escoge **"Ver Costo De Inventario."** le muestra el valor total de su inventario. 
+
+Si el usuario escoge **"Ver Cantidad Total de Items."** le muestra la cantidad de items en su inventario.
+
+Si el usuario escoge **"Salir."** sale del submenú y regresa al menú inicial.
+
+### **4. Salir.**
+
+Sale del menú y cierra el programa por completo.
+
+---
+
 
 Además, el programa incluye **validaciones para evitar errores**, como:
  
+- No se permiten números negativos ni cadenas de texto para ambos menú del programa.
+- Solo acepta números del 1 al 4 y del 1 al 3 dependiendo de cada menú.
 - No permite números ni caracteres especiales en el nombre del producto.
 - No permite números negativos en el precio y la cantidad.
 - Solo se permiten números en el precio.
@@ -40,15 +69,15 @@ El programa utiliza **bucles (`while`) y manejo de errores (`try / except` )** p
 
 ### El flujo del programa es el siguiente: 
 
-1. Se solicita el **nombre del producto**.
+1. Se muestra el **Menú inicial**.
 
-2. Se valida que el nombre solo contenga **letras**, evitando números o caracteres especiales.
-3. Se solicita el **precio del producto**.
-4. Se valida que el precio sea un **número valido** y que **no sea negativo**. 
-5. Se solicita la **cantidad del producto**. 
-6. Se valida que sea un **número entero** y **no sea negativo**.
-7. Se calcula el **total a pagar** multiplicando el **precio** por la **cantidad**. 
-8. Finalmente se muestran los datos ingresados junto con el **total calculado**.
+2. Se valida la **elección** del usuario.
+
+3. Dependiendo de la **elección** del usuario el programa puede:
+- Preguntar por un **nombre**, **precio** y **cantidad** para agregar un producto.
+- Mostrar el **inventario** del usuario.
+- Calcular las estadísticas y mostrarlas al usuario.
+- Salir del menú y cerrar el programa.
 
 ---
 
@@ -63,7 +92,7 @@ En la siguiente opción se cuentra la url de descarga de Python 👉
 En la siguiente opción se cuentra la url de descarga de Visual Studio Code 👉 [Visual Studio Code Link de Descarga](https://code.visualstudio.com/download)
 
 ### 3️⃣ Descargar e Instalar Git.
-En la siguiente opción se cuentra la url de descarga de Python 👉
+En la siguiente opción se cuentra la url de descarga de Git 👉
 [Git Link de Descarga](https://git-scm.com/install/)
 
 ### 4️⃣ Clonar el repositorio
@@ -73,12 +102,12 @@ Dentro de su carpeta presione **Click Derecho** y presiona la opción que diga *
 
 Dentro de la terminar copie y pegue el siguiente comando: **git clone https://github.com/doctorpatitas/Proyecto_Riwi_HistoriaUsuario_Python.git**
 
-Finalmente introduzca el comando **"code ."** para que le habra **Visual Studio Code** dentro de la carpeta en donde se encuentra ubicado.
+Finalmente introduzca el comando **code .** para que le abra **Visual Studio Code** dentro de la carpeta en donde se encuentra ubicado.
 
 ### 5️⃣ Ejecutar el programa.
 Dentro de **Visual Studio Code** dirigase arriba a la izquierda y presione la opción que diga **Terminal** y luego **New Terminal**
 
-Dentro de la terminal escriba el siguiente comando: **python3 inventario.py**
+Dentro de la terminal escriba el siguiente comando: **python3 main.py**
 
 Y su programa estara ejecutandose exitosamente. 
 

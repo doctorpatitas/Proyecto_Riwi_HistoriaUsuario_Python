@@ -11,7 +11,8 @@ MENU = """
 1. --> Agregar Productos.
 2. --> Mostrar Inventario.
 3. --> Calcular Estadísticas.
-4. --> Salir."""
+4. --> Ver Mayor Stock.
+5. --> Salir."""
 
     
 # Lista en donde se almacena el inventario.
@@ -61,6 +62,7 @@ def menu_estadistica():
             break
 
 
+
         else: # En caso de error.
             print("Opción invalida. Intentelo de nuevo.")
 
@@ -95,8 +97,12 @@ while True: # Ciclo que se repite infinitamente.
         # Llama a la función que contiene el segundo menu.
         menu_estadistica()
 
+
+    elif opcion == 4:
+        mostrar.maxstock(inventario)
+
         
-    elif opcion == 4: # Salir
+    elif opcion == 5: # Salir
         # Rompe el ciclo del while True y sale del menú.
         break
 

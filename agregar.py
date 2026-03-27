@@ -49,11 +49,21 @@ def agregar_producto():
     
 
     # Diccionario que almacena los datos ingresados por el usuario.
-    producto = {}
+    producto = {
+        "papa": {
+            "precio": 21,
+            "cantidad": 3452
+        },
+        "libra de arroz": {
+            "precio": 13452,
+            "cantidad": 1234345
+        }
+    }
 
 
     # Se guarda el producto en formato de diccionario. 
-    producto[nombre] = {
+    producto = {
+        "nombre": nombre,
         "precio": precio,
         "cantidad": cantidad
         }

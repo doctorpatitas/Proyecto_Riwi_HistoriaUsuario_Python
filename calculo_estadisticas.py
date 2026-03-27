@@ -30,3 +30,5 @@ def calcular_cantidad(inventario):
             conteo += datos ["cantidad"]
     return conteo
 
+
+

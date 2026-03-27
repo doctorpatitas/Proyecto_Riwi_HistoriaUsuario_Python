@@ -6,3 +6,8 @@ def mostrar_producto(inventario):
         for nombre, datos in i.items():
             # Muestra el inventario en la terminal.
             print(f"{nombre} |Precio: {datos['precio']} |Cantidad: {datos['cantidad']}")
+
+
+def maxstock(inventario):
+    for i in inventario:
+        print(i)

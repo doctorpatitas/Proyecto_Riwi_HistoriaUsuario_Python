@@ -10,13 +10,15 @@ MENU = """
 
 1. --> Agregar Productos.
 2. --> Mostrar Inventario.
-3. --> Calcular Estadísticas.
-4. --> Ver Mayor Stock.
-5. --> Salir."""
+3. --> Buscar.
+4. --> Calcular Estadísticas.
+5. --> Ver Mayor Stock.
+6. --> Salir."""
 
     
 # Lista en donde se almacena el inventario.
 inventario = []
+nombre=None
 
 
 def menu_estadistica():
@@ -93,16 +95,21 @@ while True: # Ciclo que se repite infinitamente.
         mostrar.mostrar_producto(inventario)
 
 
-    elif opcion == 3: # Calcular Estadisticas.
+    elif opcion == 3: # Buscar.
+        # Llama a la función que contiene la busqueda.
+        mostrar.buscar_elemento(inventario, nombre)
+
+
+    elif opcion == 4: # Calcular Estadisticas.
         # Llama a la función que contiene el segundo menu.
         menu_estadistica()
 
 
-    elif opcion == 4:
-        mostrar.maxstock(inventario)
+    elif opcion == 5:
+        mostrar.producto_mayor_stock(inventario)
 
         
-    elif opcion == 5: # Salir
+    elif opcion == 6: # Salir
         # Rompe el ciclo del while True y sale del menú.
         break
 

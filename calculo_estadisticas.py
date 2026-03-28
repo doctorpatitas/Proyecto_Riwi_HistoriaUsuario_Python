@@ -1,5 +1,5 @@
 # Función que calcula el total de un producto (precio * cantidad).
-def calcular_estadisticas(datos):
+def calcular_precio_total(datos):
     # Busca en el diccionario las claves de "precio" y "cantidad", luego multiplica su valor y lo guarda en la variable de resultado.
     resultado = datos["precio"] * datos ["cantidad"]
     return resultado
@@ -14,7 +14,7 @@ def calcular_total(inventario):
         # Accede al nombre y datos del producto.
         for nombre, datos in i.items():
             # Ingresa el calculo de la función "calcular_estadisticas" dentro de la variable total y incrementa para contar el valor total del inventario.
-            total += calcular_estadisticas(datos)
+            total += calcular_precio_total(datos)
     return total
 
 
@@ -29,6 +29,9 @@ def calcular_cantidad(inventario):
             # Se incrementa para contar la cantidad total de productos.
             conteo += datos ["cantidad"]
     return conteo
+
+
+
 
 
 

@@ -1,5 +1,5 @@
 # Función que solicita los datos al usuario para ingresar sus productos al programa.
-def agregar_producto():
+def agregar_producto ():
     while True: # Ciclo que se repite infinitamente.
         # Capturador de errores
         try:
@@ -62,8 +62,7 @@ def agregar_producto():
 
 
     # Se guarda el producto en formato de diccionario. 
-    producto = {
-        "nombre": nombre,
+    producto[nombre] = {
         "precio": precio,
         "cantidad": cantidad
         }

@@ -9,5 +9,11 @@ def mostrar_producto(inventario):
 
 
 def maxstock(inventario):
+    producto_mas_caro = []
     for i in inventario:
-        print(i)
+        for nombre, datos in i.items():
+            contenedor_cantidad = datos.get("cantidad")
+            producto_mas_caro.append(contenedor_cantidad)
+            mayor_stock = max(producto_mas_caro)
+            
+    print(f"{nombre}: {mayor_stock}")

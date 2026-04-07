@@ -8,6 +8,7 @@ import archivos
 
 # Lista principal del inventario
 inventario = []
+nombre=None
 
 MENU = """
 ¿Qué desea hacer?

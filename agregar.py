@@ -1,39 +1,11 @@
-
-import random
-
-def generar_id(inventario):
+def agregar_producto():
     """
-    Genera un ID aleatorio de 4 dígitos (0000–9999)
-    y verifica que no exista en el inventario.
+    Solicita datos al usuario y retorna un producto en forma de diccionario.
     """
 
     while True:
-        # Genera número entre 0 y 9999
-        numero = random.randint(0, 9999)
-
-        # Formatea a 4 dígitos (ej: 5 → 0005)
-        id_generado = str(numero).zfill(4)
-
-        # Verifica si ya existe
-        existe = False
-        for producto in inventario:
-            if producto["id"] == id_generado:
-                existe = True
-                break
-
-        # Si no existe, lo usamos
-        if not existe:
-            return id_generado
-
-
-def agregar_producto(inventario):
-    """
-    Solicita datos al usuario y crea un producto con ID único.
-    """
-
-    while True:
-        nombre = input("Nombre: ").strip()
-        if nombre == "":
+        nombre = input("Nombre: ")
+        if nombre.strip() == "":
             print("Nombre inválido")
             continue
         break
@@ -58,11 +30,7 @@ def agregar_producto(inventario):
         except:
             print("Solo enteros")
 
-    # 🔥 Generar ID único
-    id_producto = generar_id(inventario)
-
     return {
-        "id": id_producto,
         "nombre": nombre,
         "precio": precio,
         "cantidad": cantidad
